@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px; /* Added padding */
+}
+
+/* Product List Section */
+.product-list {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-list h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker heading color */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three products in a single line */
+    gap: 20px; /* Space between cards */
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: white;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px;
+    height: 400px; /* Increased height for larger boxes */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 220px; /* Set a max height for the image */
+    object-fit: cover; /* Ensures image covers the area nicely */
+    border-radius: 8px; /* Rounded image corners */
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.product-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #4CAF50; /* Price color */
+}
+
+/* Button Styles */
+.add-to-cart {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #45a049, #4CAF50); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.add-to-cart:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two products in a line for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* One product in a line for very small screens */
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
